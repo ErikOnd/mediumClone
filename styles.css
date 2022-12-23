@@ -1,0 +1,260 @@
+ body {
+
+     font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif
+ }
+
+
+ .container {
+     width: 100%;
+ }
+
+ .hero {
+     background-color: rgb(255 192 23);
+ }
+
+ .header {
+     display: flex;
+     padding: 6px;
+     padding-left: 30px;
+     justify-content: space-between;
+     vertical-align: middle;
+     border-bottom: 0.5px solid black;
+ }
+
+ .header img {
+     padding-left: 90px;
+     width: 55px;
+ }
+
+ .header a {
+     font-size: 5px;
+ }
+
+ .black-btn {
+     background-color: black;
+     color: white;
+     padding: 4px;
+     border-radius: 10px;
+ }
+
+ .links {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .links a:last-of-type {
+     margin-right: 110px;
+ }
+
+ .main {
+     position: relative;
+     display: flex;
+     height: 90px;
+     justify-content: space-between;
+     padding-left: 108px;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     border-bottom: 0.5px solid black;
+ }
+
+ .main-text {
+     display: flex;
+     flex-direction: column;
+     width: 200px;
+     height: 100%;
+     padding-left: 11px;
+     justify-content: space-evenly;
+     padding-bottom: 50px;
+     gap: 10px;
+ }
+
+ h1 {
+     font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+     margin-block: 0;
+     font-size: 35px;
+ }
+
+ .main-text p {
+     font-size: 8px;
+     width: 140px;
+ }
+
+ .main-text span {
+     font-size: 8px;
+     padding-inline: 15px;
+     width: 47px;
+ }
+
+ .main img {
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     width: 190px;
+     align-self: flex-end;
+ }
+
+ .trending {
+     display: flex;
+     flex-direction: column;
+     margin-inline: 120px;
+     padding-top: 10px
+ }
+
+ .trending-header {
+     display: flex;
+     align-items: center;
+ }
+
+ .trending-header>img {
+     width: 10px;
+ }
+
+ .trending-header>span {
+     font-size: 5px;
+     font-weight: 600;
+ }
+
+ .trending-topics {
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 5px;
+     align-items: center;
+ }
+
+ .topic {
+     display: flex;
+     margin-bottom: 15px;
+ }
+
+ .topic>span {
+     font-size: 10px;
+     color: rgb(230 230 230);
+     margin-right: 8px;
+     align-self: flex-start;
+ }
+
+ .trending-post-header,
+ .story-header {
+     display: flex;
+     align-items: center;
+ }
+
+ .trending-post-header img,
+ .story-header img {
+     width: 10px;
+     border-radius: 50%;
+     margin-right: 3px;
+ }
+
+ .trending-post-header>span,
+ .story-header span {
+     font-size: 5px;
+ }
+
+ .trending-topics .div {
+     display: flex;
+ }
+
+
+ .trending-topics .div {
+     display: flex;
+ }
+
+ .trending-post {
+     display: flex;
+     flex-direction: column;
+     width: 112px;
+ }
+
+ .trending-post span {
+     font-size: 5px;
+ }
+
+ .trending-post>span {
+     margin-top: 3px;
+ }
+
+ .trending-post>span:first-of-type {
+     font-weight: 700;
+ }
+
+ .topic-bottom {
+     margin-top: 3px;
+     display: flex;
+     align-items: center;
+     gap: 2px;
+ }
+
+ .topic-bottom span {
+     color: rgb(117, 117, 117);
+     font-size: 5px;
+     font-weight: 300px;
+ }
+
+ .topic-bottom img {
+     width: 7px;
+ }
+
+
+
+ .bottom-main {
+     display: flex;
+     padding-inline: 118px;
+     padding-block: 20px;
+     border-top: 0.5px solid rgb(230, 230, 230);
+ }
+
+
+ .stories {
+     display: flex;
+     flex-direction: column;
+
+ }
+
+ .story-content {
+     display: flex;
+     flex-direction: column;
+     width: 140px;
+ }
+
+ .story-content>span:first-of-type {
+     margin-top: 3px;
+     font-size: 7px;
+     font-weight: 600;
+ }
+
+ .story-content>span:last-of-type {
+     margin-top: 3px;
+     font-size: 5px;
+     font-weight: 300;
+     color: rgb(117, 117, 117);
+ }
+
+ .topic-typ {
+     color: rgb(117, 117, 117);
+     background-color: rgb(242, 242, 242);
+     border: 2px solid rgb(242, 242, 242);
+     border-radius: 10px;
+ }
+
+ .bookmark {
+     margin-left: auto;
+ }
+
+ .hole-storey {
+     display: flex;
+     margin-bottom: 15px;
+ }
+
+ .story-img img {
+     margin-left: 10px;
+     height: 45px;
+     margin-top: auto;
+ }
+
+
+
+ .filters {
+     position: sticky
+ }
