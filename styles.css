@@ -200,7 +200,8 @@
 
  .bottom-main {
      display: flex;
-     padding-inline: 118px;
+     padding-inline: 121px;
+     padding-right: 130px;
      padding-block: 20px;
      border-top: 0.5px solid rgb(230, 230, 230);
  }
@@ -209,6 +210,7 @@
  .stories {
      display: flex;
      flex-direction: column;
+     margin-top: 3px;
 
  }
 
@@ -256,5 +258,53 @@
 
 
  .filters {
-     position: sticky
+     display: flex;
+     flex-direction: column;
+     position: sticky;
+     top: 10px;
+     height: 60%;
+     margin-left: 35px;
+ }
+
+ .filter-heading {
+     display: flex;
+     margin-bottom: 4px;
+     align-content: flex-start;
+ }
+
+
+ .filter-heading>span {
+     color: rgb(41, 41, 41);
+     font-weight: 700;
+     font-size: 4.5px;
+ }
+
+ .filter-section {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 3px;
+     padding-bottom: 10px;
+     border-bottom: 0.5px solid rgb(230, 230, 230);
+     margin-bottom: 10px;
+ }
+
+ .filter-section>span {
+     font-size: 4px;
+     color: rgb(117, 117, 117);
+     padding-inline: 6px;
+     padding-block: 3px;
+     border: 0.5px solid rgb(117, 117, 117, 0.2);
+     border-radius: 1px;
+ }
+
+ .info-section {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .info-section span {
+     font-size: 5px;
+     color: rgb(117, 117, 117);
+     margin-right: 7px;
+     margin-bottom: 5px;
  }
