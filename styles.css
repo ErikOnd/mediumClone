@@ -1,6 +1,6 @@
  body {
 
-     font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
  }
 
 
@@ -14,115 +14,138 @@
 
  .header {
      display: flex;
-     padding: 6px;
-     padding-left: 30px;
-     justify-content: space-between;
-     vertical-align: middle;
+     padding: 16px;
      border-bottom: 0.5px solid black;
      position: sticky;
      top: 0px;
      background-color: rgb(255 192 23);
      z-index: 1;
+     white-space: nowrap;
+ }
+
+ .header__content {
+     display: flex;
+     flex-wrap: nowrap;
+     margin: 0px 64px;
+     display: flex;
+     width: 100%;
+     justify-content: center;
+     vertical-align: middle;
+     align-items: center;
+ }
+
+ .header__placeholder {
+     display: flex;
+     flex-wrap: nowrap;
+     width: 33vw;
  }
 
  .header img {
-     padding-left: 90px;
-     width: 55px;
+     height: 25px;
  }
 
  .header a {
-     font-size: 5px;
+     display: flex;
+     flex-wrap: nowrap;
+     font-size: 14px;
+     line-height: 20px;
+     line-height: 14px;
  }
 
  .black-btn {
+     font-size: 24px;
      background-color: black;
      color: white;
-     padding: 4px;
-     border-radius: 10px;
+     padding: 12px 15px;
+     border-radius: 20px;
  }
 
  .links {
      display: flex;
      align-items: center;
-     gap: 10px;
- }
-
- .links a:last-of-type {
-     margin-right: 110px;
+     gap: 25px;
  }
 
  .main {
-     position: relative;
      display: flex;
-     height: 90px;
      justify-content: space-between;
-     padding-left: 108px;
-     padding-top: 30px;
-     padding-bottom: 30px;
      border-bottom: 0.5px solid black;
+     align-content: center;
+     overflow: hidden;
  }
 
  .main-text {
      display: flex;
      flex-direction: column;
-     width: 200px;
+     width: 600px;
      height: 100%;
-     padding-left: 11px;
      justify-content: space-evenly;
-     padding-bottom: 50px;
-     gap: 10px;
+     gap: 40px;
+     padding-top: 90px;
+     padding-bottom: 90px;
+     padding-left: 347px;
  }
+
+
 
  h1 {
      font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
      margin-block: 0;
-     font-size: 35px;
+     font-size: 110px;
+     font-weight: 400;
+     letter-spacing: -0.05em;
+     line-height: 95px;
+     white-space: nowrap;
  }
 
  .main-text p {
-     font-size: 8px;
-     width: 140px;
+     width: 400px;
+     font-size: 22px;
+
  }
 
  .main-text span {
-     font-size: 8px;
-     padding-inline: 15px;
-     width: 47px;
- }
-
- .main img {
-     position: absolute;
-     right: 0;
-     bottom: 0;
-     width: 190px;
-     align-self: flex-end;
+     font-size: 22px;
+     width: 200px;
+     border-radius: 30px;
+     text-align: center;
  }
 
  .trending {
      display: flex;
-     flex-direction: column;
-     margin-inline: 120px;
-     padding-top: 10px
+     padding-top: 40px;
+     justify-content: center;
+ }
+
+ .center-content {
+     width: 1200px;
+ }
+
+ .center-content2 {
+     display: flex;
+     flex-direction: row;
+     width: 1200px;
  }
 
  .trending-header {
      display: flex;
      align-items: center;
+     gap: 10px;
  }
 
  .trending-header>img {
-     width: 10px;
+     width: 25px;
  }
 
  .trending-header>span {
-     font-size: 5px;
-     font-weight: 600;
+     font-size: 12px;
+     font-weight: 700;
  }
 
  .trending-topics {
      display: flex;
      flex-wrap: wrap;
-     margin-top: 5px;
+     margin-top: 15px;
      align-items: center;
  }
 
@@ -132,10 +155,15 @@
  }
 
  .topic>span {
-     font-size: 10px;
+     font-size: 30px;
+     font-weight: 700;
      color: rgb(230 230 230);
-     margin-right: 8px;
-     align-self: flex-start;
+     margin-right: 20px;
+ }
+
+ .topic div {
+     margin-top: 2px;
+
  }
 
  .trending-post-header,
@@ -144,16 +172,21 @@
      align-items: center;
  }
 
- .trending-post-header img,
  .story-header img {
-     width: 10px;
+     width: 20px;
      border-radius: 50%;
-     margin-right: 3px;
+     margin-right: 5px;
+ }
+
+ .trending-post-header img {
+     width: 20px;
+     border-radius: 3px;
+     margin-right: 5px;
  }
 
  .trending-post-header>span,
  .story-header span {
-     font-size: 5px;
+     font-size: 13px;
  }
 
  .trending-topics .div {
@@ -168,15 +201,19 @@
  .trending-post {
      display: flex;
      flex-direction: column;
-     width: 112px;
+     width: 345px;
  }
 
  .trending-post span {
-     font-size: 5px;
+     font-size: 16px;
+ }
+
+ .trending-post-header span {
+     font-size: 13px;
  }
 
  .trending-post>span {
-     margin-top: 3px;
+     margin-top: 10px;
  }
 
  .trending-post>span:first-of-type {
@@ -184,68 +221,77 @@
  }
 
  .topic-bottom {
-     margin-top: 3px;
      display: flex;
+
      align-items: center;
-     gap: 2px;
+     gap: 10px;
+     align-content: flex-start;
  }
 
  .topic-bottom span {
      color: rgb(117, 117, 117);
-     font-size: 5px;
+     font-size: 13px;
      font-weight: 300px;
+     margin-top: 10px;
+     margin-bottom: 30px;
  }
 
  .topic-bottom img {
-     width: 7px;
+     width: 20px;
+     margin-bottom: 18px;
  }
 
 
 
  .bottom-main {
      display: flex;
-     padding-inline: 121px;
-     padding-right: 130px;
-     padding-block: 20px;
+     padding-top: 60px;
      border-top: 0.5px solid rgb(230, 230, 230);
+     justify-content: center;
  }
 
 
  .stories {
      display: flex;
      flex-direction: column;
-     margin-top: 3px;
+     margin-top: 5px;
 
  }
 
  .story-content {
      display: flex;
      flex-direction: column;
-     width: 140px;
+     width: 455px;
  }
 
  .story-content>span:first-of-type {
-     margin-top: 3px;
-     font-size: 7px;
+     margin-top: 10px;
+     font-size: 21px;
      font-weight: 600;
  }
 
  .story-content>span:last-of-type {
-     margin-top: 3px;
-     font-size: 5px;
-     font-weight: 300;
+     margin-top: 10px;
+     font-size: 16px;
+     font-weight: 400;
      color: rgb(117, 117, 117);
  }
 
- .topic-typ {
+ .story-content span:nth-of-type(2) {
+     font-size: 15px;
+ }
+
+ .story-content .topic-bottom .topic-typ {
      color: rgb(117, 117, 117);
      background-color: rgb(242, 242, 242);
-     border: 2px solid rgb(242, 242, 242);
-     border-radius: 10px;
+     border: 8px solid rgb(242, 242, 242);
+     border-radius: 20px;
+     font-size: 12px;
  }
 
- .bookmark {
+ .topic-bottom .bookmark {
      margin-left: auto;
+     width: 25px;
  }
 
  .hole-storey {
@@ -254,25 +300,23 @@
  }
 
  .story-img img {
-     margin-left: 10px;
-     height: 45px;
+     margin-left: 30px;
+     height: 134px;
      margin-top: auto;
  }
-
-
 
  .filters {
      display: flex;
      flex-direction: column;
      position: sticky;
-     top: 35px;
+     top: 105px;
      height: 60%;
-     margin-left: 35px;
+     margin-left: 100px;
  }
 
  .filter-heading {
      display: flex;
-     margin-bottom: 4px;
+     margin-bottom: 15px;
      align-content: flex-start;
  }
 
@@ -280,25 +324,24 @@
  .filter-heading>span {
      color: rgb(41, 41, 41);
      font-weight: 700;
-     font-size: 4.5px;
+     font-size: 12px;
  }
 
  .filter-section {
      display: flex;
      flex-wrap: wrap;
-     gap: 3px;
-     padding-bottom: 10px;
+     gap: 6px;
+     padding-bottom: 40px;
      border-bottom: 0.5px solid rgb(230, 230, 230);
-     margin-bottom: 10px;
+     margin-bottom: 20px;
  }
 
  .filter-section>span {
-     font-size: 4px;
+     font-size: 14px;
      color: rgb(117, 117, 117);
-     padding-inline: 6px;
-     padding-block: 3px;
+     padding: 8px 16px;
      border: 0.5px solid rgb(117, 117, 117, 0.2);
-     border-radius: 1px;
+     border-radius: 3px;
  }
 
  .info-section {
@@ -307,8 +350,31 @@
  }
 
  .info-section span {
-     font-size: 5px;
+     font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 20px;
      color: rgb(117, 117, 117);
-     margin-right: 7px;
-     margin-bottom: 5px;
+     margin-right: 25px;
+     margin-bottom: 7px;
+ }
+
+ .tran-white {
+     transition: background-color 0.5s ease;
+     background-color: white;
+ }
+
+ .tran-yellow {
+     transition: background-color 0.5s ease;
+     background-color: rgb(255 192 23)
+ }
+
+ .tran-green {
+     transition: background-color 0.5s ease;
+     background-color: rgb(26, 137, 23);
+ }
+
+ .green-balck {
+     transition: background-color 0.5s ease;
+     background-color: black;
  }
